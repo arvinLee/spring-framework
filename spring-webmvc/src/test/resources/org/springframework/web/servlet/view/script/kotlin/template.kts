@@ -1,1 +1,5 @@
-"""<html><head><title>${bindings["title"]}</title></head><body><p>${bindings["body"]}</p></body></html>"""
+import org.springframework.web.servlet.view.script.*
+
+"""${include("header") }
+<p>${i18n("hello")} $foo</p>
+${include("footer")}"""
